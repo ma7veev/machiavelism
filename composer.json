@@ -1,0 +1,28 @@
+{
+  "name": "ma7veev/machiavellism",
+  "authors": [
+    {
+      "name": "ma7veev",
+      "email": "ma7veev@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr4": {
+      "client\\": "core/client/",
+      "engine\\": "core/engine/",
+      "models\\": "core/models/",
+      "patterns\\": "core/patterns/",
+      "game\\": "app/game/",
+      "settings\\": "app/settings/"
+    },
+    "classmap": [
+      "core/client/",
+      "core/engine/",
+      "core/models/",
+      "core/patterns/",
+      "app/game/",
+      "app/settings/"
+    ]
+  }
+}
