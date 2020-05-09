@@ -14,7 +14,9 @@
       "models\\": "core/models/",
       "patterns\\": "core/patterns/",
       "game\\": "app/game/",
-      "settings\\": "app/settings/"
+      "settings\\": "app/settings/",
+      "config\\": "config/adapters/",
+      "exceptions\\": "core/exceptions/"
     },
     "classmap": [
       "core/client/",
@@ -22,7 +24,8 @@
       "core/models/",
       "core/patterns/",
       "app/game/",
-      "app/settings/"
+      "app/settings/",
+      "config/adapters/"
     ]
   }
 }

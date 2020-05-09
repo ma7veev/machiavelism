@@ -19,12 +19,13 @@ class Client
         $this->moduleNamespace = '\\' . $this->module;
     }
 
-    public function runAction(string $action, string $object, array $input)
+    public function runAction(string $action, string $object, array $options)
     {
-
         $controllerName = $this->moduleNamespace . '\Controller';
-        $controller = new $controllerName();
+        $controller = new $controllerName;
 
-        return $controller->call($action, $object, $input);
+        $response = $controller->runAction($action, $object, $options);
+
+        return $response->getOutput();
     }
 }
